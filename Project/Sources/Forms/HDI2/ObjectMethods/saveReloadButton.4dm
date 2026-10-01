@@ -6,14 +6,14 @@ End if
 Case of 
 		
 	: (Not:C34(Form:C1466.editedStudent.touched()))  // No update has been done on the entity
-		ALERT:C41("Make an update before saving")
+		ALERT:C41(Localized string("AlertMakeUpdate"))
 		
 	: (Form:C1466.editedStudent.rank>=100)
-		ALERT:C41("Rank must be less than 100")
+		ALERT:C41(Localized string("AlertRankLimit"))
 		
 	Else 
 		
-		ALERT:C41("Before the save action, another process has updated the student"+Char:C90(13)+Char:C90(13)+"so the save() method fails"+Char:C90(13)+Char:C90(13)+"even with the dk auto merge option ...")
+		ALERT:C41(Localized string("AlertSaveReloadFails"))
 		
 		PS_updater(Form:C1466.editedStudent.getKey(); "")  // Another process fully updates the current edited student and its stamp in DB
 		

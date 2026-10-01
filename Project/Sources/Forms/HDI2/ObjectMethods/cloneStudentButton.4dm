@@ -1,6 +1,3 @@
-C_OBJECT:C1216($status)
-
-
 If (btnTrace)
 	TRACE:C157
 End if 

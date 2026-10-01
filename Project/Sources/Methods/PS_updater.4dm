@@ -1,21 +1,15 @@
-//%attributes = {}
-C_LONGINT:C283($1)  // primary key of the entity to update
-C_TEXT:C284($2)  // Optional parameter (last name of the entity to update)
-C_LONGINT:C283($3)  // if NOT passed create the process
-C_LONGINT:C283($ps)
-C_OBJECT:C1216($status; $studentToUpdate; $schoolslist)
-C_LONGINT:C283($indexSchool; $key)
-C_TEXT:C284($lastName)
+//%attributes = {"invisible":true}
+#DECLARE($key : Integer; $lastName : Text; $created : Integer)  // $key: primary key of the entity to update; $lastName: optional last name; $created: if NOT passed create the process
+
+var $ps; $indexSchool : Integer
+var $status; $studentToUpdate; $schoolslist : Object
 
 
 If (Count parameters:C259=2)
 	
-	$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; $1; $2; 0; *)
+	$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; $key; $lastName; 0; *)
 	
 Else 
-	
-	$key:=$1
-	$lastName:=$2
 	
 	$studentToUpdate:=ds:C1482.Student.get($key)  // Get the entity to update
 	

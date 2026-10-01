@@ -7,7 +7,7 @@ End if
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)
 		
-		ALERT:C41("Before the drop action, another process has updated the student so the stamp has changed. "+Char:C90(13)+Char:C90(13)+"That process changed the last name to MAC ARTHUR")
+		ALERT:C41(Localized string("AlertProcessUpdatesDrop"))
 		
 		PS_updater(Form:C1466.editedStudent.getKey(); "MAC ARTHUR")  //Another process updates the entity (last name only) and its stamp in DB
 		

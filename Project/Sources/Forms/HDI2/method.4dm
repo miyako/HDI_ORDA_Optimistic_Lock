@@ -1,13 +1,18 @@
-
-C_LONGINT:C283($n; $i)
+var $foreground; $background : Integer
 
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
 		
-		
 		ARRAY TEXT:C222(_TabTitles; 0)
 		ARRAY TEXT:C222(_Descriptions; 0)
+		
+		OBJECT GET RGB COLORS(*; "refColorMerged"; $foreground; $background)
+		Form:C1466.colorMerged:=$background
+		OBJECT GET RGB COLORS(*; "refColorReloaded"; $foreground; $background)
+		Form:C1466.colorReloaded:=$background
+		OBJECT GET RGB COLORS(*; "refColorApplied"; $foreground; $background)
+		Form:C1466.colorApplied:=$background
 		
 		READ ONLY:C145([INFO:1])
 		QUERY:C277([INFO:1]; [INFO:1]PageNumber:4; "<"; 9)
@@ -42,4 +47,3 @@ Case of
 		
 		
 End case 
-

@@ -15,7 +15,7 @@ If (Form:C1466.saveStatus.success)
 	OBJECT SET ENABLED:C1123(*; "applyCloneButton"; False:C215)
 	OBJECT SET VISIBLE:C603(*; "saveStudentMessageOKText"; True:C214)
 	
-	OBJECT SET RGB COLORS:C628(*; "editedStudentRank"; 0x005E8600; Background color:K23:2)
+	OBJECT SET RGB COLORS:C628(*; "editedStudentRank"; Form:C1466.colorApplied; Background color:K23:2)
 	
 End if 
 

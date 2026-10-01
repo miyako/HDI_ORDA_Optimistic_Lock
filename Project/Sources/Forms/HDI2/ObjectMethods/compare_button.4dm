@@ -1,6 +1,6 @@
-C_COLLECTION:C1488($schoolSearch)
-C_OBJECT:C1216($schoolAttribute)
-C_LONGINT:C283($schoolIndex)
+var $schoolSearch : Collection
+var $schoolAttribute : Object
+var $schoolIndex : Integer
 
 
 If (btnTrace)

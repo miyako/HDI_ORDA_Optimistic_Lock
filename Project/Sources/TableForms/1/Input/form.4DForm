@@ -47,8 +47,8 @@
 					"width": 380,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
-					"text": "INFO"
+					"stroke": "automatic",
+					"text": ":xliff:INFO_TableLabel"
 				},
 				"Line6": {
 					"type": "line",
@@ -197,7 +197,7 @@
 					"width": 85,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": ":xliff:INFO_IDLabel"
 				},
 				"ID": {
 					"type": "input",
@@ -237,7 +237,7 @@
 					"sizingY": "grow",
 					"dataSource": "[INFO:1]Description:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"styledText": true,
 					"scrollbarVertical": "visible",

@@ -1,0 +1,97 @@
+@media (prefers-color-scheme: light) {
+	.panel {
+		fill: #C0C0C0;
+	}
+
+	.muted {
+		stroke: #696969;
+	}
+
+	.link {
+		stroke: #1E90FF;
+	}
+
+	.msg-success {
+		stroke: #008000;
+	}
+
+	.msg-error {
+		stroke: #DC143C;
+	}
+
+	.msg-hint {
+		stroke: #006400;
+	}
+
+	.msg-note {
+		stroke: #8B4513;
+	}
+
+	.msg-reloaded {
+		stroke: #DA70D6;
+	}
+
+	.ref-color-merged {
+		fill: #FF7F7F;
+		visibility: hidden;
+	}
+
+	.ref-color-reloaded {
+		fill: #C2009E;
+		visibility: hidden;
+	}
+
+	.ref-color-applied {
+		fill: #5E8600;
+		visibility: hidden;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.panel {
+		fill: #3A3A3A;
+	}
+
+	.muted {
+		stroke: #A0A0A0;
+	}
+
+	.link {
+		stroke: #5CB8FF;
+	}
+
+	.msg-success {
+		stroke: #5FD35F;
+	}
+
+	.msg-error {
+		stroke: #FF6B7A;
+	}
+
+	.msg-hint {
+		stroke: #7FDC7F;
+	}
+
+	.msg-note {
+		stroke: #D2A679;
+	}
+
+	.msg-reloaded {
+		stroke: #E9A0E6;
+	}
+
+	.ref-color-merged {
+		fill: #FF9999;
+		visibility: hidden;
+	}
+
+	.ref-color-reloaded {
+		fill: #E866CC;
+		visibility: hidden;
+	}
+
+	.ref-color-applied {
+		fill: #9ACD32;
+		visibility: hidden;
+	}
+}

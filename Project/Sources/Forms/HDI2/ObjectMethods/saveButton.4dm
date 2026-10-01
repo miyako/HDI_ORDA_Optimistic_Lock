@@ -1,5 +1,5 @@
-C_BOOLEAN:C305($updateToApply)
-C_OBJECT:C1216($item)
+var $updateToApply : Boolean
+var $item : Object
 
 
 If (btnTrace)

@@ -19,3 +19,11 @@
 	font-weight: bold;
 }
 
+
+.default {
+	height: 20px;
+}
+
+button.default {
+	height: 20px;
+}

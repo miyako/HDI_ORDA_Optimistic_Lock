@@ -1,4 +1,4 @@
-C_OBJECT:C1216($status)
+var $status : Object
 
 If (btnTrace)
 	TRACE:C157
@@ -17,7 +17,7 @@ If ($status.success & $status.autoMerged)  // The save with auto merge is succes
 	
 	OBJECT SET VISIBLE:C603(*; "save_OK_@"; True:C214)
 	
-	OBJECT SET RGB COLORS:C628(*; "studentToMergeLastName"; 0x00FF7F7F; Background color:K23:2)
+	OBJECT SET RGB COLORS:C628(*; "studentToMergeLastName"; Form:C1466.colorMerged; Background color:K23:2)
 	
 	
 End if 

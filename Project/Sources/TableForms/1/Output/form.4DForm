@@ -58,7 +58,7 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Page:"
+					"text": ":xliff:INFO_Page"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +67,7 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Title"
+					"text": ":xliff:INFO_Title"
 				},
 				"Rectangle4": {
 					"type": "rectangle",
@@ -76,7 +76,8 @@
 					"width": 376,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -114,7 +115,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[INFO:1]TabTitle:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",

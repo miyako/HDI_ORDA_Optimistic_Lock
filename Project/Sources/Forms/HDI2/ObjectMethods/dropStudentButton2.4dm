@@ -1,4 +1,3 @@
-C_BOOLEAN:C305(btnTrace)
 
 If (btnTrace)
 	TRACE:C157
@@ -8,7 +7,11 @@ Form:C1466.dropStatus:=Form:C1466.editedStudent.drop(dk force drop if stamp chan
 
 If (Form:C1466.dropStatus.success)
 	
-	ALERT:C41("You have dropped the "+Form:C1466.editedStudent.firstName+" "+Form:C1466.editedStudent.lastName+" student")
+	var $message : Text
+	$message:=Localized string("AlertStudentDropped")
+	$message:=Replace string:C233($message; "{firstName}"; Form:C1466.editedStudent.firstName)
+	$message:=Replace string:C233($message; "{lastName}"; Form:C1466.editedStudent.lastName)
+	ALERT:C41($message)
 	
 	OBJECT SET ENABLED:C1123(*; "dropStudentButton2"; False:C215)
 	OBJECT SET VISIBLE:C603(*; "drop_KO_@"; False:C215)

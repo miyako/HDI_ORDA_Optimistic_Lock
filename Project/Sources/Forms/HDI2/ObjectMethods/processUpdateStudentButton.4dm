@@ -6,7 +6,7 @@ End if
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)
 		
-		ALERT:C41("This creates another process which updates the student, so the stamp will change. "+Char:C90(13)+Char:C90(13)+"This process will change the last name to SMITH")
+		ALERT:C41(Localized string("AlertProcessUpdates"))
 		
 		PS_updater(Form:C1466.editedStudent.getKey(); "SMITH")  // Another process updates the entity (last name only) and its stamp in DB
 		

@@ -37,6 +37,33 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"refColorMerged": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-merged",
+					"stroke": "transparent"
+				},
+				"refColorReloaded": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-reloaded",
+					"stroke": "transparent"
+				},
+				"refColorApplied": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-applied",
+					"stroke": "transparent"
 				}
 			}
 		},
@@ -53,7 +80,7 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "In this part you will learn how to query the DataStore"
+					"text": ":xliff:HDI2_IntroText"
 				},
 				"information4": {
 					"type": "input",
@@ -101,7 +128,7 @@
 					"left": 120,
 					"width": 680,
 					"sizingX": "grow",
-					"stroke": "#696969"
+					"class": "muted"
 				},
 				"HDIpicture": {
 					"type": "picture",
@@ -121,26 +148,26 @@
 					"top": 440,
 					"left": 460,
 					"width": 80,
-					"height": 20,
-					"text": "Save",
+					"text": ":xliff:HDI2_Save",
 					"focusable": false,
 					"method": "ObjectMethods/updateStudentButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"processUpdateStudentButton": {
 					"type": "button",
 					"top": 371,
 					"left": 460,
 					"width": 280,
-					"height": 20,
-					"text": "Another process updates this student",
+					"text": ":xliff:HDI2_AnotherProcessUpdates",
 					"focusable": false,
 					"method": "ObjectMethods/processUpdateStudentButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"updateContactDirection": {
 					"type": "text",
@@ -149,7 +176,7 @@
 					"width": 390,
 					"height": 16,
 					"fontWeight": "bold",
-					"text": "Now, update the student (except last name) and try to save it"
+					"text": ":xliff:HDI2_UpdateDirection"
 				},
 				"save_OK_updateStudentMessageText": {
 					"type": "text",
@@ -157,22 +184,22 @@
 					"left": 578,
 					"width": 280,
 					"height": 17,
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "The update student action was successful"
+					"text": ":xliff:HDI2_UpdateSuccess",
+					"class": "msg-success"
 				},
 				"updateStudentButton2": {
 					"type": "button",
 					"top": 520,
 					"left": 460,
 					"width": 100,
-					"height": 20,
-					"text": "Save again",
+					"text": ":xliff:HDI2_SaveAgain",
 					"focusable": false,
 					"method": "ObjectMethods/updateStudentButton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"information11": {
 					"type": "input",
@@ -300,7 +327,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"Text44": {
 					"type": "text",
@@ -309,7 +336,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"Text46": {
 					"type": "text",
@@ -318,7 +345,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Email"
+					"text": ":xliff:HDI2_Email"
 				},
 				"Variable16": {
 					"type": "input",
@@ -368,9 +395,9 @@
 					"width": 150,
 					"height": 20,
 					"visibility": "hidden",
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The save action failed."
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
 				},
 				"save_KO_reason3": {
 					"type": "text",
@@ -381,7 +408,7 @@
 					"visibility": "hidden",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "statusText: "
+					"text": ":xliff:HDI2_StatusText"
 				},
 				"save_KO_text3": {
 					"type": "input",
@@ -422,7 +449,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in memory:"
+					"text": ":xliff:HDI2_StampInMemory"
 				},
 				"save_KO_stamp_text_2": {
 					"type": "text",
@@ -431,7 +458,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in database:"
+					"text": ":xliff:HDI2_StampInDatabase"
 				},
 				"save_KO_stamp_memory": {
 					"type": "input",
@@ -482,7 +509,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in memory:"
+					"text": ":xliff:HDI2_StampInMemory"
 				},
 				"save_OK_stamp_text1": {
 					"type": "text",
@@ -491,7 +518,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in database:"
+					"text": ":xliff:HDI2_StampInDatabase"
 				},
 				"save_OK_stamp_memory": {
 					"type": "input",
@@ -558,7 +585,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -593,9 +620,6 @@
 							"width": 171,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -604,7 +628,7 @@
 							],
 							"header": {
 								"name": "Header20",
-								"text": "Schools",
+								"text": ":xliff:HDI2_HeaderSchools",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -614,10 +638,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Oval14": {
 					"type": "oval",
@@ -648,7 +677,7 @@
 					"width": 150,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Edit student example"
+					"text": ":xliff:HDI2_EditStudentExample"
 				}
 			}
 		},
@@ -660,21 +689,21 @@
 					"left": 377,
 					"width": 280,
 					"height": 130,
-					"fill": "#C0C0C0",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"class": "panel"
 				},
 				"reloadStudentButton": {
 					"type": "button",
 					"top": 546,
 					"left": 300,
 					"width": 120,
-					"height": 20,
-					"text": "Reload",
+					"text": ":xliff:HDI2_Reload",
 					"focusable": false,
 					"method": "ObjectMethods/reloadStudentButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"reloadStudentMessageOKText": {
 					"type": "text",
@@ -682,9 +711,9 @@
 					"left": 54,
 					"width": 280,
 					"height": 17,
-					"stroke": "#DA70D6",
 					"fontWeight": "bold",
-					"text": "The student has been reloaded"
+					"text": ":xliff:HDI2_StudentReloaded",
+					"class": "msg-reloaded"
 				},
 				"information2": {
 					"type": "input",
@@ -727,13 +756,13 @@
 					"top": 437,
 					"left": 440,
 					"width": 80,
-					"height": 20,
-					"text": "Save",
+					"text": ":xliff:HDI2_Save",
 					"focusable": false,
 					"method": "ObjectMethods/saveReloadButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"save_KO_message2": {
 					"type": "text",
@@ -741,9 +770,9 @@
 					"left": 530,
 					"width": 150,
 					"height": 17,
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The save action failed."
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
 				},
 				"save_KO_reason2": {
 					"type": "text",
@@ -753,7 +782,7 @@
 					"height": 17,
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "statusText: "
+					"text": ":xliff:HDI2_StatusText"
 				},
 				"save_KO_text2": {
 					"type": "input",
@@ -792,7 +821,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"clonedStudentLN": {
 					"type": "input",
@@ -816,7 +845,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"Text54": {
 					"type": "text",
@@ -824,36 +853,36 @@
 					"left": 407,
 					"width": 200,
 					"height": 20,
-					"stroke": "#8B4513",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "(Cloned student)"
+					"text": ":xliff:HDI2_ClonedStudent",
+					"class": "msg-note"
 				},
 				"applyCloneButton": {
 					"type": "button",
 					"top": 620,
 					"left": 398,
 					"width": 180,
-					"height": 20,
-					"text": "Apply rank and save",
+					"text": ":xliff:HDI2_ApplyRankAndSave",
 					"focusable": false,
 					"method": "ObjectMethods/applyCloneButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"cloneStudentButton": {
 					"type": "button",
 					"top": 484,
 					"left": 300,
 					"width": 120,
-					"height": 20,
-					"text": "Make a clone",
+					"text": ":xliff:HDI2_MakeClone",
 					"focusable": false,
 					"method": "ObjectMethods/cloneStudentButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"saveStudentMessageOKText": {
 					"type": "text",
@@ -861,9 +890,9 @@
 					"left": 54,
 					"width": 280,
 					"height": 17,
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "The student has been successfully saved"
+					"text": ":xliff:HDI2_StudentSaved",
+					"class": "msg-success"
 				},
 				"information13": {
 					"type": "input",
@@ -1062,7 +1091,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1075,7 +1104,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"Text22": {
 					"type": "text",
@@ -1084,7 +1113,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"Text23": {
 					"type": "text",
@@ -1093,7 +1122,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Rank"
+					"text": ":xliff:HDI2_Rank"
 				},
 				"editedStudentFirstName": {
 					"type": "input",
@@ -1160,7 +1189,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Rank"
+					"text": ":xliff:HDI2_Rank"
 				},
 				"Texte4": {
 					"type": "text",
@@ -1169,7 +1198,7 @@
 					"width": 150,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Edit student example"
+					"text": ":xliff:HDI2_EditStudentExample"
 				}
 			}
 		},
@@ -1201,39 +1230,39 @@
 					"top": 470,
 					"left": 310,
 					"width": 120,
-					"height": 20,
-					"text": "Drop",
+					"text": ":xliff:HDI2_Drop",
 					"focusable": false,
 					"method": "ObjectMethods/dropStudentButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"processUpdateStudentButton2": {
 					"type": "button",
 					"top": 430,
 					"left": 650,
 					"width": 270,
-					"height": 20,
-					"text": "Another process updates this student",
+					"text": ":xliff:HDI2_AnotherProcessUpdates",
 					"focusable": false,
 					"method": "ObjectMethods/processUpdateStudentButton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"dropStudentButton2": {
 					"type": "button",
 					"top": 560,
 					"left": 310,
 					"width": 120,
-					"height": 20,
-					"text": "Drop again",
+					"text": ":xliff:HDI2_DropAgain",
 					"focusable": false,
 					"method": "ObjectMethods/dropStudentButton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"information12": {
 					"type": "input",
@@ -1300,7 +1329,7 @@
 					"width": 133,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Number of students:"
+					"text": ":xliff:HDI2_NumberOfStudents"
 				},
 				"Variable15": {
 					"type": "input",
@@ -1387,9 +1416,9 @@
 					"width": 149,
 					"height": 20,
 					"visibility": "hidden",
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The drop action failed."
+					"text": ":xliff:HDI2_DropFailed",
+					"class": "msg-error"
 				},
 				"drop_KO_reason": {
 					"type": "text",
@@ -1400,7 +1429,7 @@
 					"visibility": "hidden",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "statusText: "
+					"text": ":xliff:HDI2_StatusText"
 				},
 				"drop_KO_text": {
 					"type": "input",
@@ -1424,9 +1453,9 @@
 					"left": 460,
 					"width": 280,
 					"height": 17,
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "The drop student action was successfull"
+					"text": ":xliff:HDI2_DropSuccess",
+					"class": "msg-success"
 				},
 				"listBoxDropOption": {
 					"type": "listbox",
@@ -1458,9 +1487,6 @@
 							"width": 150,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1469,7 +1495,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "First name",
+								"text": ":xliff:HDI2_FirstName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1479,8 +1505,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -1488,9 +1516,6 @@
 							"width": 150,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1499,7 +1524,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "Last name",
+								"text": ":xliff:HDI2_LastName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1509,8 +1534,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -1518,9 +1545,6 @@
 							"width": 200,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1529,7 +1553,7 @@
 							],
 							"header": {
 								"name": "Header3",
-								"text": "Email",
+								"text": ":xliff:HDI2_Email",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1539,10 +1563,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"processUpdatePupilDirection6": {
 					"type": "input",
@@ -1599,7 +1628,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in memory:"
+					"text": ":xliff:HDI2_StampInMemory"
 				},
 				"drop_KO_stamp_text1": {
 					"type": "text",
@@ -1608,7 +1637,7 @@
 					"width": 120,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Stamp in database:"
+					"text": ":xliff:HDI2_StampInDatabase"
 				},
 				"drop_KO_stamp_db": {
 					"type": "input",
@@ -1638,7 +1667,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1651,7 +1680,7 @@
 					"width": 150,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Student example"
+					"text": ":xliff:HDI2_StudentExample"
 				}
 			}
 		},
@@ -1681,7 +1710,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"Text27": {
 					"type": "text",
@@ -1690,7 +1719,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"Text28": {
 					"type": "text",
@@ -1699,20 +1728,20 @@
 					"width": 160,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Email"
+					"text": ":xliff:HDI2_Email"
 				},
 				"updatedFieldsButton": {
 					"type": "button",
 					"top": 400,
 					"left": 450,
 					"width": 180,
-					"height": 20,
-					"text": "Updated attributes",
+					"text": ":xliff:HDI2_UpdatedAttributes",
 					"focusable": false,
 					"method": "ObjectMethods/updatedFieldsButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"diff_updated_fields1": {
 					"type": "listbox",
@@ -1737,9 +1766,6 @@
 							"width": 215,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1748,7 +1774,7 @@
 							],
 							"header": {
 								"name": "Header19",
-								"text": "Updated attributes",
+								"text": ":xliff:HDI2_UpdatedAttributes",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1758,10 +1784,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"diff_directions2": {
 					"type": "input",
@@ -1845,7 +1876,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1880,9 +1911,6 @@
 							"width": 171,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1891,7 +1919,7 @@
 							],
 							"header": {
 								"name": "Header4",
-								"text": "Schools name",
+								"text": ":xliff:HDI2_HeaderSchoolsName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1901,8 +1929,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne2",
@@ -1910,9 +1940,6 @@
 							"width": 109,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -1921,7 +1948,7 @@
 							],
 							"header": {
 								"name": "Entête2",
-								"text": "Primary key",
+								"text": ":xliff:HDI2_HeaderPrimaryKey",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1931,10 +1958,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Oval4": {
 					"type": "oval",
@@ -1965,7 +1997,7 @@
 					"width": 150,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Edit student example"
+					"text": ":xliff:HDI2_EditStudentExample"
 				}
 			}
 		},
@@ -1996,13 +2028,13 @@
 					"top": 430,
 					"left": 395,
 					"width": 155,
-					"height": 20,
-					"text": "Compare entities",
+					"text": ":xliff:HDI2_CompareEntities",
 					"focusable": false,
 					"method": "ObjectMethods/compare_button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Oval9": {
 					"type": "oval",
@@ -2054,9 +2086,6 @@
 							"width": 150,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2065,7 +2094,7 @@
 							],
 							"header": {
 								"name": "Header25",
-								"text": "First name",
+								"text": ":xliff:HDI2_FirstName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2075,8 +2104,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column26",
@@ -2084,9 +2115,6 @@
 							"width": 150,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2095,7 +2123,7 @@
 							],
 							"header": {
 								"name": "Header26",
-								"text": "Last name",
+								"text": ":xliff:HDI2_LastName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2105,8 +2133,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column27",
@@ -2114,9 +2144,6 @@
 							"width": 210,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2125,7 +2152,7 @@
 							],
 							"header": {
 								"name": "Header27",
-								"text": "Email",
+								"text": ":xliff:HDI2_Email",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2135,8 +2162,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne3",
@@ -2144,9 +2173,6 @@
 							"width": 80,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2155,7 +2181,7 @@
 							],
 							"header": {
 								"name": "Entête3",
-								"text": "Rank",
+								"text": ":xliff:HDI2_Rank",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2165,8 +2191,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column28",
@@ -2174,9 +2202,6 @@
 							"width": 200,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2185,7 +2210,7 @@
 							],
 							"header": {
 								"name": "Header28",
-								"text": "School",
+								"text": ":xliff:HDI2_HeaderSchool",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2195,8 +2220,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column29",
@@ -2204,9 +2231,6 @@
 							"width": 115,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "center",
 							"verticalAlign": "middle",
 							"events": [
@@ -2215,7 +2239,7 @@
 							],
 							"header": {
 								"name": "Header29",
-								"text": "School \\primary key",
+								"text": ":xliff:HDI2_HeaderSchoolPrimaryKey",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2225,10 +2249,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"diff_listBox_compare1": {
 					"type": "listbox",
@@ -2252,9 +2281,6 @@
 							"dataSource": "This:C1470.attributeName",
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2263,7 +2289,7 @@
 							],
 							"header": {
 								"name": "Header30",
-								"text": "Entity attributes",
+								"text": ":xliff:HDI2_HeaderEntityAttributes",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2273,8 +2299,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column31",
@@ -2282,9 +2310,6 @@
 							"width": 210,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2293,7 +2318,7 @@
 							],
 							"header": {
 								"name": "Header31",
-								"text": "Value in first entity",
+								"text": ":xliff:HDI2_HeaderValueFirst",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2303,8 +2328,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column32",
@@ -2312,14 +2339,11 @@
 							"width": 210,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header32",
-								"text": "Value in second entity",
+								"text": ":xliff:HDI2_HeaderValueSecond",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2329,10 +2353,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"diff_compare_directions1": {
 					"type": "input",
@@ -2377,9 +2406,6 @@
 							"width": 195,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2388,7 +2414,7 @@
 							],
 							"header": {
 								"name": "Header33",
-								"text": "School \\ (first entity)",
+								"text": ":xliff:HDI2_HeaderSchoolFirst",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2398,10 +2424,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"diffschool_4": {
 					"type": "listbox",
@@ -2426,9 +2457,6 @@
 							"width": 210,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2437,7 +2465,7 @@
 							],
 							"header": {
 								"name": "Header38",
-								"text": "School \\ (second entity)",
+								"text": ":xliff:HDI2_HeaderSchoolSecond",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2447,10 +2475,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"diffschool_directions1": {
 					"type": "input",
@@ -2479,7 +2512,7 @@
 					"width": 300,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Select two students"
+					"text": ":xliff:HDI2_SelectTwoStudents"
 				},
 				"Oval12": {
 					"type": "oval",
@@ -2526,7 +2559,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -2541,13 +2574,13 @@
 					"top": 400,
 					"left": 450,
 					"width": 80,
-					"height": 20,
-					"text": "Save",
+					"text": ":xliff:HDI2_Save",
 					"focusable": false,
 					"method": "ObjectMethods/saveAutoMergeButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Oval6": {
 					"type": "oval",
@@ -2597,14 +2630,11 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header34",
-								"text": "Entity fields",
+								"text": ":xliff:HDI2_HeaderEntityFields",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2614,8 +2644,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column35",
@@ -2624,9 +2656,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2634,7 +2663,7 @@
 							],
 							"header": {
 								"name": "Header35",
-								"text": "My updated value",
+								"text": ":xliff:HDI2_HeaderMyValue",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2644,8 +2673,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column36",
@@ -2654,14 +2685,11 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header36",
-								"text": "New value in DB saved by another process",
+								"text": ":xliff:HDI2_HeaderNewValueInDB",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2671,8 +2699,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column37",
@@ -2681,9 +2711,6 @@
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"controlType": "checkbox",
-							"stroke": "#000000",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "center",
 							"verticalAlign": "automatic",
 							"events": [
@@ -2691,7 +2718,7 @@
 							],
 							"header": {
 								"name": "Header37",
-								"text": "Update with mine",
+								"text": ":xliff:HDI2_HeaderUpdateWithMine",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -2701,23 +2728,28 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"saveButton": {
 					"type": "button",
 					"top": 620,
 					"left": 280,
 					"width": 80,
-					"height": 20,
-					"text": "Apply",
+					"text": ":xliff:HDI2_Apply",
 					"focusable": false,
 					"method": "ObjectMethods/saveButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"save_OK_message": {
 					"type": "text",
@@ -2726,9 +2758,9 @@
 					"width": 318,
 					"height": 17,
 					"visibility": "hidden",
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "Your updates have been applied"
+					"text": ":xliff:HDI2_UpdatesApplied",
+					"class": "msg-success"
 				},
 				"information5": {
 					"type": "input",
@@ -2757,9 +2789,9 @@
 					"width": 150,
 					"height": 20,
 					"visibility": "hidden",
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The save action failed."
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
 				},
 				"save_KO_reason1": {
 					"type": "text",
@@ -2770,7 +2802,7 @@
 					"visibility": "hidden",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "statusText: "
+					"text": ":xliff:HDI2_StatusText"
 				},
 				"save_KO_text1": {
 					"type": "input",
@@ -2795,9 +2827,9 @@
 					"width": 290,
 					"height": 17,
 					"visibility": "hidden",
-					"stroke": "#006400",
 					"fontWeight": "bold",
-					"text": "Select fields to update and save"
+					"text": ":xliff:HDI2_SelectFieldsToUpdate",
+					"class": "msg-hint"
 				},
 				"reload_OK_message": {
 					"type": "text",
@@ -2806,9 +2838,9 @@
 					"width": 318,
 					"height": 17,
 					"visibility": "hidden",
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "Your updates have not been applied"
+					"text": ":xliff:HDI2_UpdatesNotApplied",
+					"class": "msg-success"
 				},
 				"processUpdatePupilDirection11": {
 					"type": "input",
@@ -2871,7 +2903,7 @@
 					"width": 160,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Rank"
+					"text": ":xliff:HDI2_Rank"
 				},
 				"studentToEditRank": {
 					"type": "input",
@@ -2895,7 +2927,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -2908,7 +2940,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_FirstName"
 				},
 				"Text20": {
 					"type": "text",
@@ -2917,7 +2949,7 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LastName"
 				},
 				"Text29": {
 					"type": "text",
@@ -2926,7 +2958,7 @@
 					"width": 160,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Email"
+					"text": ":xliff:HDI2_Email"
 				},
 				"Variable1": {
 					"type": "input",
@@ -2996,9 +3028,6 @@
 							"width": 171,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -3007,7 +3036,7 @@
 							],
 							"header": {
 								"name": "Header5",
-								"text": "Schools name",
+								"text": ":xliff:HDI2_HeaderSchoolsName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -3017,8 +3046,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Colonne1",
@@ -3026,9 +3057,6 @@
 							"width": 109,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -3037,7 +3065,7 @@
 							],
 							"header": {
 								"name": "Entête1",
-								"text": "Primary key",
+								"text": ":xliff:HDI2_HeaderPrimaryKey",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -3047,10 +3075,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Texte3": {
 					"type": "text",
@@ -3059,7 +3092,7 @@
 					"width": 150,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Edit student example"
+					"text": ":xliff:HDI2_EditStudentExample"
 				}
 			}
 		}

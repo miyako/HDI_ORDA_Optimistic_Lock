@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Methods" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>work with optimistic locking in ORDA?</source>
+				<target>ORDA で楽観的ロックを扱うには?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>ORDA</source>
+				<target>ORDA</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>閉じる</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>申し訳ありません。この “How do I” (HDI) サンプルは 4D View Pro の機能を紹介しています。</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>続行するには有効な 4D View Pro ライセンスが必要です。</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>申し訳ありません。この “How do I” (HDI) サンプルは 4D Write Pro の機能を紹介しています。</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>続行するには有効な 4D Write Pro ライセンスが必要です。</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessUpdates" resname="AlertProcessUpdates">
+				<source>This creates another process which updates the student, so the stamp will change. &#13;&#13;This process will change the last name to SMITH</source>
+				<target>別のプロセスが生徒を更新するため、スタンプが変更されます。&#13;&#13;このプロセスは姓を SMITH に変更します</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessUpdatesDrop" resname="AlertProcessUpdatesDrop">
+				<source>Before the drop action, another process has updated the student so the stamp has changed. &#13;&#13;That process changed the last name to MAC ARTHUR</source>
+				<target>削除の前に別のプロセスが生徒を更新したため、スタンプが変更されました。&#13;&#13;そのプロセスは姓を MAC ARTHUR に変更しました</target>
+			</trans-unit>
+			<trans-unit id="AlertMakeUpdate" resname="AlertMakeUpdate">
+				<source>Make an update before saving</source>
+				<target>保存する前に更新を行ってください</target>
+			</trans-unit>
+			<trans-unit id="AlertRankLimit" resname="AlertRankLimit">
+				<source>Rank must be less than 100</source>
+				<target>ランクは 100 未満でなければなりません</target>
+			</trans-unit>
+			<trans-unit id="AlertSaveAutoMergeFails" resname="AlertSaveAutoMergeFails">
+				<source>Before the save action, another process has updated the student &#13;&#13;so the save() method (even with dk auto merge selector) fails ...</source>
+				<target>保存の前に別のプロセスが生徒を更新したため、&#13;&#13;save() メソッドは (dk auto merge セレクターを使用しても) 失敗します ...</target>
+			</trans-unit>
+			<trans-unit id="AlertSaveReloadFails" resname="AlertSaveReloadFails">
+				<source>Before the save action, another process has updated the student&#13;&#13;so the save() method fails&#13;&#13;even with the dk auto merge option ...</source>
+				<target>保存の前に別のプロセスが生徒を更新したため、&#13;&#13;save() メソッドは&#13;&#13;dk auto merge オプションを使用しても失敗します ...</target>
+			</trans-unit>
+			<trans-unit id="AlertStudentDropped" resname="AlertStudentDropped">
+				<source>You have dropped the {firstName} {lastName} student</source>
+				<target>生徒 {firstName} {lastName} を削除しました</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

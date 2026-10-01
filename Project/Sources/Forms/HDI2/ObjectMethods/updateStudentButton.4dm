@@ -4,7 +4,7 @@ If (btnTrace)
 End if 
 
 If (Not:C34(Form:C1466.editedStudent.touched()))  // No update has been done on the entity
-	ALERT:C41("Make an update before saving")
+	ALERT:C41(Localized string("AlertMakeUpdate"))
 Else 
 	
 	

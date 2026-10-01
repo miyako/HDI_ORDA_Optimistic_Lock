@@ -1,10 +1,7 @@
-//%attributes = {}
-
-
-C_LONGINT:C283($index)
-C_OBJECT:C1216($p1; $p2)
-C_COLLECTION:C1488($schools)
-C_BOOLEAN:C305(btnTrace)
+//%attributes = {"invisible":true}
+var $index : Integer
+var $p1; $p2 : Object
+var $schools : Collection
 
 //Business logic related to ORDA
 
@@ -18,7 +15,7 @@ OBJECT SET ENABLED:C1123(*; "processUpdateStudentButton"; True:C214)
 OBJECT SET ENABLED:C1123(*; "updateStudentButton@"; False:C215)
 OBJECT SET VISIBLE:C603(*; "save_KO_@"; False:C215)
 OBJECT SET VISIBLE:C603(*; "save_OK_@"; False:C215)
-OBJECT SET RGB COLORS:C628(*; "studentToMergeLastName"; 0x0000; Background color:K23:2)
+OBJECT SET RGB COLORS:C628(*; "studentToMergeLastName"; Foreground color; Background color:K23:2)
 
 //Select the school in the list box
 // The indexOf() method will be detailed in another How do I
@@ -35,7 +32,7 @@ OBJECT SET ENABLED:C1123(*; "applyCloneButton"; False:C215)
 OBJECT SET VISIBLE:C603(*; "save_KO_@"; False:C215)
 OBJECT SET VISIBLE:C603(*; "reloadStudentMessageOKText"; False:C215)
 OBJECT SET VISIBLE:C603(*; "saveStudentMessageOKText"; False:C215)
-OBJECT SET RGB COLORS:C628(*; "edited@"; 0x0000; Background color:K23:2)
+OBJECT SET RGB COLORS:C628(*; "edited@"; Foreground color; Background color:K23:2)
 Form:C1466.clonedStudent:=New object:C1471
 
 

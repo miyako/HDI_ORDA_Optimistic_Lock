@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI2_IntroText" resname="HDI2_IntroText">
+				<source>In this part you will learn how to query the DataStore</source>
+				<target>この部分では、データストアへのクエリ方法を学びます</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Save" resname="HDI2_Save">
+				<source>Save</source>
+				<target>保存</target>
+			</trans-unit>
+			<trans-unit id="HDI2_AnotherProcessUpdates" resname="HDI2_AnotherProcessUpdates">
+				<source>Another process updates this student</source>
+				<target>別のプロセスがこの生徒を更新</target>
+			</trans-unit>
+			<trans-unit id="HDI2_UpdateDirection" resname="HDI2_UpdateDirection">
+				<source>Now, update the student (except last name) and try to save it</source>
+				<target>生徒 (姓を除く) を更新して、保存してみましょう</target>
+			</trans-unit>
+			<trans-unit id="HDI2_UpdateSuccess" resname="HDI2_UpdateSuccess">
+				<source>The update student action was successful</source>
+				<target>生徒の更新に成功しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SaveAgain" resname="HDI2_SaveAgain">
+				<source>Save again</source>
+				<target>再度保存</target>
+			</trans-unit>
+			<trans-unit id="HDI2_FirstName" resname="HDI2_FirstName">
+				<source>First name</source>
+				<target>名</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LastName" resname="HDI2_LastName">
+				<source>Last name</source>
+				<target>姓</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Email" resname="HDI2_Email">
+				<source>Email</source>
+				<target>メール</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SaveFailed" resname="HDI2_SaveFailed">
+				<source>The save action failed.</source>
+				<target>保存に失敗しました。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StatusText" resname="HDI2_StatusText">
+				<source>statusText: </source>
+				<target>statusText: </target>
+			</trans-unit>
+			<trans-unit id="HDI2_StampInMemory" resname="HDI2_StampInMemory">
+				<source>Stamp in memory:</source>
+				<target>メモリ内のスタンプ:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StampInDatabase" resname="HDI2_StampInDatabase">
+				<source>Stamp in database:</source>
+				<target>データベース内のスタンプ:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>トレース</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchools" resname="HDI2_HeaderSchools">
+				<source>Schools</source>
+				<target>学校</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EditStudentExample" resname="HDI2_EditStudentExample">
+				<source>Edit student example</source>
+				<target>生徒編集の例</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Reload" resname="HDI2_Reload">
+				<source>Reload</source>
+				<target>再読み込み</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StudentReloaded" resname="HDI2_StudentReloaded">
+				<source>The student has been reloaded</source>
+				<target>生徒を再読み込みしました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ClonedStudent" resname="HDI2_ClonedStudent">
+				<source>(Cloned student)</source>
+				<target>(複製した生徒)</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ApplyRankAndSave" resname="HDI2_ApplyRankAndSave">
+				<source>Apply rank and save</source>
+				<target>ランクを適用して保存</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MakeClone" resname="HDI2_MakeClone">
+				<source>Make a clone</source>
+				<target>複製を作成</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StudentSaved" resname="HDI2_StudentSaved">
+				<source>The student has been successfully saved</source>
+				<target>生徒を保存しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Rank" resname="HDI2_Rank">
+				<source>Rank</source>
+				<target>ランク</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Drop" resname="HDI2_Drop">
+				<source>Drop</source>
+				<target>削除</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DropAgain" resname="HDI2_DropAgain">
+				<source>Drop again</source>
+				<target>再度削除</target>
+			</trans-unit>
+			<trans-unit id="HDI2_NumberOfStudents" resname="HDI2_NumberOfStudents">
+				<source>Number of students:</source>
+				<target>生徒数:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DropFailed" resname="HDI2_DropFailed">
+				<source>The drop action failed.</source>
+				<target>削除に失敗しました。</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DropSuccess" resname="HDI2_DropSuccess">
+				<source>The drop student action was successfull</source>
+				<target>生徒を削除しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_StudentExample" resname="HDI2_StudentExample">
+				<source>Student example</source>
+				<target>生徒の例</target>
+			</trans-unit>
+			<trans-unit id="HDI2_UpdatedAttributes" resname="HDI2_UpdatedAttributes">
+				<source>Updated attributes</source>
+				<target>更新された属性</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchoolsName" resname="HDI2_HeaderSchoolsName">
+				<source>Schools name</source>
+				<target>学校名</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderPrimaryKey" resname="HDI2_HeaderPrimaryKey">
+				<source>Primary key</source>
+				<target>主キー</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CompareEntities" resname="HDI2_CompareEntities">
+				<source>Compare entities</source>
+				<target>エンティティを比較</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchool" resname="HDI2_HeaderSchool">
+				<source>School</source>
+				<target>学校</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchoolPrimaryKey" resname="HDI2_HeaderSchoolPrimaryKey">
+				<source>School \primary key</source>
+				<target>学校 \主キー</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderEntityAttributes" resname="HDI2_HeaderEntityAttributes">
+				<source>Entity attributes</source>
+				<target>エンティティの属性</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderValueFirst" resname="HDI2_HeaderValueFirst">
+				<source>Value in first entity</source>
+				<target>1番目のエンティティの値</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderValueSecond" resname="HDI2_HeaderValueSecond">
+				<source>Value in second entity</source>
+				<target>2番目のエンティティの値</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchoolFirst" resname="HDI2_HeaderSchoolFirst">
+				<source>School \ (first entity)</source>
+				<target>学校 \ (1番目のエンティティ)</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderSchoolSecond" resname="HDI2_HeaderSchoolSecond">
+				<source>School \ (second entity)</source>
+				<target>学校 \ (2番目のエンティティ)</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SelectTwoStudents" resname="HDI2_SelectTwoStudents">
+				<source>Select two students</source>
+				<target>2人の生徒を選択</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderEntityFields" resname="HDI2_HeaderEntityFields">
+				<source>Entity fields</source>
+				<target>エンティティのフィールド</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderMyValue" resname="HDI2_HeaderMyValue">
+				<source>My updated value</source>
+				<target>自分が更新した値</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderNewValueInDB" resname="HDI2_HeaderNewValueInDB">
+				<source>New value in DB saved by another process</source>
+				<target>別のプロセスが保存した DB 内の新しい値</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderUpdateWithMine" resname="HDI2_HeaderUpdateWithMine">
+				<source>Update with mine</source>
+				<target>自分の値で更新</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Apply" resname="HDI2_Apply">
+				<source>Apply</source>
+				<target>適用</target>
+			</trans-unit>
+			<trans-unit id="HDI2_UpdatesApplied" resname="HDI2_UpdatesApplied">
+				<source>Your updates have been applied</source>
+				<target>更新を適用しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_SelectFieldsToUpdate" resname="HDI2_SelectFieldsToUpdate">
+				<source>Select fields to update and save</source>
+				<target>更新して保存するフィールドを選択</target>
+			</trans-unit>
+			<trans-unit id="HDI2_UpdatesNotApplied" resname="HDI2_UpdatesNotApplied">
+				<source>Your updates have not been applied</source>
+				<target>更新は適用されませんでした</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
