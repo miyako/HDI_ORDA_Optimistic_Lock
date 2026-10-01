@@ -1,0 +1,13 @@
+//%attributes = {"invisible":true}
+C_OBJECT:C1216(addressToCreate)
+C_BOOLEAN:C305(btnTrace)
+C_OBJECT:C1216(contactsListToDelete)
+C_OBJECT:C1216(contactToCreate)
+C_OBJECT:C1216(contactToDelete)
+C_OBJECT:C1216(contactToDropWithForce)
+C_OBJECT:C1216(contactToMerge)
+C_OBJECT:C1216(contactToSave)
+C_OBJECT:C1216(contactToUpdate)
+C_TEXT:C284(dropReasonFieldText)
+C_TEXT:C284(mainDescription)
+C_TEXT:C284(saveReasonFieldText)
