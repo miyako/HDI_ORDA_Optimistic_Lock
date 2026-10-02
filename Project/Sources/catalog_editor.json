@@ -1,0 +1,215 @@
+{
+	"tables": {
+		"School": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "418.94140625",
+				"top": "124.04296875",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"Student": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "225.8046875",
+				"top": "124.859375",
+				"width": "126.52734375",
+				"height": "215.87890625"
+			},
+			"displayable_fields_count": 8
+		},
+		"(School_1)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "635.90625",
+				"top": "48.60546875",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"(Pupil_1)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "373.28125",
+				"top": "59.015625",
+				"width": "134.359375",
+				"height": "223.6328125"
+			},
+			"displayable_fields_count": 8
+		},
+		"(School)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "648.38671875",
+				"top": "37.24609375",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"(Pupil)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "218.0546875",
+				"top": "37.37109375",
+				"width": "236.03515625",
+				"height": "232.69921875"
+			},
+			"displayable_fields_count": 9,
+			"fields": {
+				"firstName": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		},
+		"(Address)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "652.1953125",
+				"top": "135.671875",
+				"width": "173.08203125",
+				"height": "321.87890625"
+			},
+			"displayable_fields_count": 13
+		},
+		"(Contact)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "296.40625",
+				"top": "139.43359375",
+				"width": "236.03515625",
+				"height": "232.69921875"
+			},
+			"displayable_fields_count": 9,
+			"fields": {
+				"firstName": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		},
+		"(DICO)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "0",
+				"top": "0",
+				"width": "137.56640625",
+				"height": "152.91796875"
+			},
+			"displayable_fields_count": 5,
+			"fields": {
+				"ID": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		},
+		"INFO": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "16.5234375",
+				"top": "93.484375",
+				"width": "148.13671875",
+				"height": "236.4296875"
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 2,
+			"fields": {
+				"PageNumber": {
+					"position": 2
+				},
+				"TabTitle": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					},
+					"position": 3
+				},
+				"Description": {
+					"position": 4
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	},
+	"relations": {
+		"74E13D4D6DD4492B8FC99D398A0B1E38": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			}
+		}
+	}
+}

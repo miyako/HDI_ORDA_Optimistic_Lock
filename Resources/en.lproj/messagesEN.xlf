@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Methods" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>work with optimistic locking in ORDA?</source>
+				<target>work with optimistic locking in ORDA?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>ORDA</source>
+				<target>ORDA</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>You must have a valid 4D View Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>You must have a valid 4D Write Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessUpdates" resname="AlertProcessUpdates">
+				<source>This creates another process which updates the student, so the stamp will change. &#13;&#13;This process will change the last name to SMITH</source>
+				<target>This creates another process which updates the student, so the stamp will change. &#13;&#13;This process will change the last name to SMITH</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessUpdatesDrop" resname="AlertProcessUpdatesDrop">
+				<source>Before the drop action, another process has updated the student so the stamp has changed. &#13;&#13;That process changed the last name to MAC ARTHUR</source>
+				<target>Before the drop action, another process has updated the student so the stamp has changed. &#13;&#13;That process changed the last name to MAC ARTHUR</target>
+			</trans-unit>
+			<trans-unit id="AlertMakeUpdate" resname="AlertMakeUpdate">
+				<source>Make an update before saving</source>
+				<target>Make an update before saving</target>
+			</trans-unit>
+			<trans-unit id="AlertRankLimit" resname="AlertRankLimit">
+				<source>Rank must be less than 100</source>
+				<target>Rank must be less than 100</target>
+			</trans-unit>
+			<trans-unit id="AlertSaveAutoMergeFails" resname="AlertSaveAutoMergeFails">
+				<source>Before the save action, another process has updated the student &#13;&#13;so the save() method (even with dk auto merge selector) fails ...</source>
+				<target>Before the save action, another process has updated the student &#13;&#13;so the save() method (even with dk auto merge selector) fails ...</target>
+			</trans-unit>
+			<trans-unit id="AlertSaveReloadFails" resname="AlertSaveReloadFails">
+				<source>Before the save action, another process has updated the student&#13;&#13;so the save() method fails&#13;&#13;even with the dk auto merge option ...</source>
+				<target>Before the save action, another process has updated the student&#13;&#13;so the save() method fails&#13;&#13;even with the dk auto merge option ...</target>
+			</trans-unit>
+			<trans-unit id="AlertStudentDropped" resname="AlertStudentDropped">
+				<source>You have dropped the {firstName} {lastName} student</source>
+				<target>You have dropped the {firstName} {lastName} student</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

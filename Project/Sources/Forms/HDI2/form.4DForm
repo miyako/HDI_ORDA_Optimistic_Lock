@@ -1,0 +1,3164 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 16,
+					"left": 25,
+					"width": 950,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"refColorMerged": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-merged",
+					"stroke": "transparent"
+				},
+				"refColorReloaded": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-reloaded",
+					"stroke": "transparent"
+				},
+				"refColorApplied": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-color-applied",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 859,
+					"left": 30,
+					"width": 920,
+					"height": 40,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_IntroText"
+				},
+				"information4": {
+					"type": "input",
+					"top": 250,
+					"left": 60,
+					"width": 820,
+					"height": 230,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information3": {
+					"type": "input",
+					"top": 60,
+					"left": 60,
+					"width": 820,
+					"height": 140,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 220,
+					"left": 120,
+					"width": 680,
+					"sizingX": "grow",
+					"class": "muted"
+				},
+				"HDIpicture": {
+					"type": "picture",
+					"top": 495,
+					"left": 325,
+					"width": 300,
+					"height": 190,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/MCD.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"updateStudentButton": {
+					"type": "button",
+					"top": 440,
+					"left": 460,
+					"width": 80,
+					"text": ":xliff:HDI2_Save",
+					"focusable": false,
+					"method": "ObjectMethods/updateStudentButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"processUpdateStudentButton": {
+					"type": "button",
+					"top": 371,
+					"left": 460,
+					"width": 280,
+					"text": ":xliff:HDI2_AnotherProcessUpdates",
+					"focusable": false,
+					"method": "ObjectMethods/processUpdateStudentButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"updateContactDirection": {
+					"type": "text",
+					"top": 444,
+					"left": 64,
+					"width": 390,
+					"height": 16,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_UpdateDirection"
+				},
+				"save_OK_updateStudentMessageText": {
+					"type": "text",
+					"top": 520,
+					"left": 578,
+					"width": 280,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_UpdateSuccess",
+					"class": "msg-success"
+				},
+				"updateStudentButton2": {
+					"type": "button",
+					"top": 520,
+					"left": 460,
+					"width": 100,
+					"text": ":xliff:HDI2_SaveAgain",
+					"focusable": false,
+					"method": "ObjectMethods/updateStudentButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"information11": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection21": {
+					"type": "input",
+					"top": 972,
+					"left": 1100,
+					"width": 300,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"updateContactButtonDirection": {
+					"type": "input",
+					"top": 474,
+					"left": 64,
+					"width": 537,
+					"height": 17,
+					"dataSource": "_Directions{6}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"updateContactButton2Direction": {
+					"type": "input",
+					"top": 555,
+					"left": 68,
+					"width": 444,
+					"height": 97,
+					"dataSource": "_Directions{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Oval18": {
+					"type": "oval",
+					"top": 439,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 444,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Oval25": {
+					"type": "oval",
+					"top": 371,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 376,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 280,
+					"left": -27,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 280,
+					"left": 486,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 280,
+					"left": 196,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Email"
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 280,
+					"left": 103,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.firstName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"studentToMergeLastName": {
+					"type": "input",
+					"top": 280,
+					"left": 616,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.lastName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 280,
+					"left": 306,
+					"width": 230,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.email",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_message3": {
+					"type": "text",
+					"top": 440,
+					"left": 548,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
+				},
+				"save_KO_reason3": {
+					"type": "text",
+					"top": 440,
+					"left": 711,
+					"width": 75,
+					"height": 20,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StatusText"
+				},
+				"save_KO_text3": {
+					"type": "input",
+					"top": 440,
+					"left": 790,
+					"width": 197,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.saveStatus.statusText",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"processUpdatePupilDirection": {
+					"type": "input",
+					"top": 376,
+					"left": 65,
+					"width": 372,
+					"height": 33,
+					"dataSource": "_Directions{10}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"save_KO_stamp_text_1": {
+					"type": "text",
+					"top": 470,
+					"left": 710,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInMemory"
+				},
+				"save_KO_stamp_text_2": {
+					"type": "text",
+					"top": 490,
+					"left": 710,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInDatabase"
+				},
+				"save_KO_stamp_memory": {
+					"type": "input",
+					"top": 470,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.getStamp()",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_stamp_db": {
+					"type": "input",
+					"top": 490,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.stampInDB",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_OK_stamp_text": {
+					"type": "text",
+					"top": 570,
+					"left": 710,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInMemory"
+				},
+				"save_OK_stamp_text1": {
+					"type": "text",
+					"top": 550,
+					"left": 710,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInDatabase"
+				},
+				"save_OK_stamp_memory": {
+					"type": "input",
+					"top": 570,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.getStamp()",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_OK_stamp_db": {
+					"type": "input",
+					"top": 550,
+					"left": 830,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.stampInDB",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdatePupilDirection1": {
+					"type": "input",
+					"top": 523,
+					"left": 64,
+					"width": 372,
+					"height": 33,
+					"dataSource": "_Directions{12}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Check Box6": {
+					"type": "checkbox",
+					"top": 665,
+					"left": 885,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"listBoxSchoolsForUpdate": {
+					"type": "listbox",
+					"top": 280,
+					"left": 782,
+					"width": 186,
+					"height": 100,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "20px",
+					"dataSource": "Form:C1466.schoolsList",
+					"currentItemSource": "Form:C1466.selectedSchool",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSchoolsForUpdate.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column20",
+							"dataSource": "This:C1470.name",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": ":xliff:HDI2_HeaderSchools",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer20",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Oval14": {
+					"type": "oval",
+					"top": 518,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 523,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 246,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EditStudentExample"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle rond": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 377,
+					"width": 280,
+					"height": 130,
+					"borderRadius": 5,
+					"class": "panel"
+				},
+				"reloadStudentButton": {
+					"type": "button",
+					"top": 546,
+					"left": 300,
+					"width": 120,
+					"text": ":xliff:HDI2_Reload",
+					"focusable": false,
+					"method": "ObjectMethods/reloadStudentButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"reloadStudentMessageOKText": {
+					"type": "text",
+					"top": 381,
+					"left": 54,
+					"width": 280,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StudentReloaded",
+					"class": "msg-reloaded"
+				},
+				"information2": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"updateContactButton2Direction1": {
+					"type": "input",
+					"top": 576,
+					"left": 60,
+					"width": 846,
+					"height": 17,
+					"dataSource": "_Directions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"saveReloadButton": {
+					"type": "button",
+					"top": 437,
+					"left": 440,
+					"width": 80,
+					"text": ":xliff:HDI2_Save",
+					"focusable": false,
+					"method": "ObjectMethods/saveReloadButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"save_KO_message2": {
+					"type": "text",
+					"top": 440,
+					"left": 530,
+					"width": 150,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
+				},
+				"save_KO_reason2": {
+					"type": "text",
+					"top": 440,
+					"left": 680,
+					"width": 80,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StatusText"
+				},
+				"save_KO_text2": {
+					"type": "input",
+					"top": 440,
+					"left": 770,
+					"width": 200,
+					"height": 17,
+					"dataSource": "Form:C1466.saveStatus.statusText",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 313,
+					"left": 470,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.clonedStudent.firstName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text39": {
+					"type": "text",
+					"top": 313,
+					"left": 361,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"clonedStudentLN": {
+					"type": "input",
+					"top": 343,
+					"left": 470,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.clonedStudent.lastName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text52": {
+					"type": "text",
+					"top": 343,
+					"left": 361,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"Text54": {
+					"type": "text",
+					"top": 282,
+					"left": 407,
+					"width": 200,
+					"height": 20,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_ClonedStudent",
+					"class": "msg-note"
+				},
+				"applyCloneButton": {
+					"type": "button",
+					"top": 620,
+					"left": 398,
+					"width": 180,
+					"text": ":xliff:HDI2_ApplyRankAndSave",
+					"focusable": false,
+					"method": "ObjectMethods/applyCloneButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"cloneStudentButton": {
+					"type": "button",
+					"top": 484,
+					"left": 300,
+					"width": 120,
+					"text": ":xliff:HDI2_MakeClone",
+					"focusable": false,
+					"method": "ObjectMethods/cloneStudentButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"saveStudentMessageOKText": {
+					"type": "text",
+					"top": 381,
+					"left": 54,
+					"width": 280,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StudentSaved",
+					"class": "msg-success"
+				},
+				"information13": {
+					"type": "input",
+					"top": 510,
+					"left": 60,
+					"width": 765,
+					"height": 17,
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 435,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 440,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Oval2": {
+					"type": "oval",
+					"top": 481,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 486,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Oval3": {
+					"type": "oval",
+					"top": 546,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 551,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Oval16": {
+					"type": "oval",
+					"top": 618,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 623,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "4"
+				},
+				"processUpdatePupilDirection2": {
+					"type": "input",
+					"top": 485,
+					"left": 60,
+					"width": 224,
+					"height": 33,
+					"dataSource": "_Directions{11}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection3": {
+					"type": "input",
+					"top": 440,
+					"left": 60,
+					"width": 380,
+					"height": 17,
+					"dataSource": "_Directions{13}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection4": {
+					"type": "input",
+					"top": 552,
+					"left": 60,
+					"width": 224,
+					"height": 17,
+					"dataSource": "_Directions{14}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection5": {
+					"type": "input",
+					"top": 624,
+					"left": 60,
+					"width": 300,
+					"height": 17,
+					"dataSource": "_Directions{15}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"information14": {
+					"type": "input",
+					"top": 650,
+					"left": 60,
+					"width": 767,
+					"height": 40,
+					"dataSource": "_Directions{16}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 675,
+					"left": 885,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 280,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 309,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 333,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Rank"
+				},
+				"editedStudentFirstName": {
+					"type": "input",
+					"top": 280,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.firstName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editedStudentLastName": {
+					"type": "input",
+					"top": 309,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.lastName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editedStudentRank": {
+					"type": "input",
+					"top": 336,
+					"left": 130,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.rank",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"clonedStudentRank": {
+					"type": "input",
+					"top": 372,
+					"left": 470,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Form:C1466.clonedStudent.rank",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 372,
+					"left": 361,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Rank"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 246,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EditStudentExample"
+				}
+			}
+		},
+		{
+			"objects": {
+				"drop_KO_stamp_memory": {
+					"type": "input",
+					"top": 520,
+					"left": 770,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.getStamp()",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"dropStudentButton": {
+					"type": "button",
+					"top": 470,
+					"left": 310,
+					"width": 120,
+					"text": ":xliff:HDI2_Drop",
+					"focusable": false,
+					"method": "ObjectMethods/dropStudentButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"processUpdateStudentButton2": {
+					"type": "button",
+					"top": 430,
+					"left": 650,
+					"width": 270,
+					"text": ":xliff:HDI2_AnotherProcessUpdates",
+					"focusable": false,
+					"method": "ObjectMethods/processUpdateStudentButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"dropStudentButton2": {
+					"type": "button",
+					"top": 560,
+					"left": 310,
+					"width": 120,
+					"text": ":xliff:HDI2_DropAgain",
+					"focusable": false,
+					"method": "ObjectMethods/dropStudentButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"information12": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection3": {
+					"type": "input",
+					"top": 499,
+					"left": 60,
+					"width": 489,
+					"height": 49,
+					"dataSource": "_Directions{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection4": {
+					"type": "input",
+					"top": 590,
+					"left": 60,
+					"width": 481,
+					"height": 100,
+					"dataSource": "_Directions{9}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text48": {
+					"type": "text",
+					"top": 393,
+					"left": 341,
+					"width": 133,
+					"height": 17,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_NumberOfStudents"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 392,
+					"left": 476,
+					"width": 54,
+					"height": 20,
+					"dataSource": "Form:C1466.students.length",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Oval22": {
+					"type": "oval",
+					"top": 472,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text49": {
+					"type": "text",
+					"top": 477,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Oval23": {
+					"type": "oval",
+					"top": 558,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text50": {
+					"type": "text",
+					"top": 563,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Oval24": {
+					"type": "oval",
+					"top": 425,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text51": {
+					"type": "text",
+					"top": 429,
+					"left": 30,
+					"width": 25,
+					"height": 21,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"drop_KO_message": {
+					"type": "text",
+					"top": 470,
+					"left": 460,
+					"width": 149,
+					"height": 20,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DropFailed",
+					"class": "msg-error"
+				},
+				"drop_KO_reason": {
+					"type": "text",
+					"top": 470,
+					"left": 630,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StatusText"
+				},
+				"drop_KO_text": {
+					"type": "input",
+					"top": 470,
+					"left": 720,
+					"width": 217,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.dropStatus.statusText",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"dropStudentMessageOKText": {
+					"type": "text",
+					"top": 560,
+					"left": 460,
+					"width": 280,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DropSuccess",
+					"class": "msg-success"
+				},
+				"listBoxDropOption": {
+					"type": "listbox",
+					"top": 246,
+					"left": 30,
+					"width": 500,
+					"height": 139,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.students",
+					"currentItemSource": "Form:C1466.selectedStudent",
+					"metaSource": "decorate(This:C1470)",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/listBoxDropOption.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": ":xliff:HDI2_FirstName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": ":xliff:HDI2_LastName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.email",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": ":xliff:HDI2_Email",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"processUpdatePupilDirection6": {
+					"type": "input",
+					"top": 431,
+					"left": 60,
+					"width": 550,
+					"height": 20,
+					"dataSource": "_Directions{17}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection7": {
+					"type": "input",
+					"top": 476,
+					"left": 60,
+					"width": 200,
+					"height": 20,
+					"dataSource": "_Directions{18}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection8": {
+					"type": "input",
+					"top": 563,
+					"left": 60,
+					"width": 200,
+					"height": 20,
+					"dataSource": "_Directions{19}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"drop_KO_stamp_text": {
+					"type": "text",
+					"top": 520,
+					"left": 640,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInMemory"
+				},
+				"drop_KO_stamp_text1": {
+					"type": "text",
+					"top": 500,
+					"left": 640,
+					"width": 120,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_StampInDatabase"
+				},
+				"drop_KO_stamp_db": {
+					"type": "input",
+					"top": 500,
+					"left": 770,
+					"width": 70,
+					"height": 20,
+					"dataSource": "Form:C1466.stampInDB",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Check Box7": {
+					"type": "checkbox",
+					"top": 665,
+					"left": 885,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 225,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StudentExample"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information10": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 280,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 309,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 280,
+					"left": 170,
+					"width": 160,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Email"
+				},
+				"updatedFieldsButton": {
+					"type": "button",
+					"top": 400,
+					"left": 450,
+					"width": 180,
+					"text": ":xliff:HDI2_UpdatedAttributes",
+					"focusable": false,
+					"method": "ObjectMethods/updatedFieldsButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"diff_updated_fields1": {
+					"type": "listbox",
+					"top": 480,
+					"left": 60,
+					"width": 230,
+					"height": 139,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.updatedFields",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column19",
+							"dataSource": "This:C1470.value",
+							"width": 215,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": ":xliff:HDI2_UpdatedAttributes",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer19",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"diff_directions2": {
+					"type": "input",
+					"top": 480,
+					"left": 335,
+					"width": 420,
+					"height": 120,
+					"visibility": "hidden",
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 280,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.firstName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"studentToEditLastName1": {
+					"type": "input",
+					"top": 309,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.lastName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 280,
+					"left": 340,
+					"width": 230,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.email",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdatePupilDirection9": {
+					"type": "input",
+					"top": 400,
+					"left": 60,
+					"width": 352,
+					"height": 17,
+					"dataSource": "_Directions{20}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 665,
+					"left": 885,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"listBoxSchoolsForTouched": {
+					"type": "listbox",
+					"top": 280,
+					"left": 620,
+					"width": 295,
+					"height": 100,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "20px",
+					"dataSource": "Form:C1466.schoolsList",
+					"currentItemSource": "Form:C1466.selectedSchool",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSchoolsForTouched.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.name",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": ":xliff:HDI2_HeaderSchoolsName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.getKey(dk key as string:K85:16)",
+							"width": 109,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": ":xliff:HDI2_HeaderPrimaryKey",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Oval4": {
+					"type": "oval",
+					"top": 394,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 398,
+					"left": 30,
+					"width": 25,
+					"height": 21,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 246,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EditStudentExample"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information9": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{6}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"compare_button": {
+					"type": "button",
+					"top": 430,
+					"left": 395,
+					"width": 155,
+					"text": ":xliff:HDI2_CompareEntities",
+					"focusable": false,
+					"method": "ObjectMethods/compare_button.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Oval9": {
+					"type": "oval",
+					"top": 430,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 435,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"listBoxDiff": {
+					"type": "listbox",
+					"top": 246,
+					"left": 30,
+					"width": 920,
+					"height": 139,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.students",
+					"selectedItemsSource": "Form:C1466.selectedStudents",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/listBoxDiff.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column25",
+							"dataSource": "This:C1470.firstName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header25",
+								"text": ":xliff:HDI2_FirstName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer25",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column26",
+							"dataSource": "This:C1470.lastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header26",
+								"text": ":xliff:HDI2_LastName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer26",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column27",
+							"dataSource": "This:C1470.email",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header27",
+								"text": ":xliff:HDI2_Email",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer27",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.rank",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": ":xliff:HDI2_Rank",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column28",
+							"dataSource": "This:C1470.school.name",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header28",
+								"text": ":xliff:HDI2_HeaderSchool",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer28",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column29",
+							"dataSource": "This:C1470.school.getKey(dk key as string:K85:16)",
+							"width": 115,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header29",
+								"text": ":xliff:HDI2_HeaderSchoolPrimaryKey",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer29",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"diff_listBox_compare1": {
+					"type": "listbox",
+					"top": 471,
+					"left": 55,
+					"width": 555,
+					"height": 139,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.diffs",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column30",
+							"dataSource": "This:C1470.attributeName",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header30",
+								"text": ":xliff:HDI2_HeaderEntityAttributes",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer30",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column31",
+							"dataSource": "This:C1470.value",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header31",
+								"text": ":xliff:HDI2_HeaderValueFirst",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer31",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column32",
+							"dataSource": "This:C1470.otherValue",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header32",
+								"text": ":xliff:HDI2_HeaderValueSecond",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer32",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"diff_compare_directions1": {
+					"type": "input",
+					"top": 471,
+					"left": 625,
+					"width": 307,
+					"height": 113,
+					"visibility": "hidden",
+					"dataSource": "_Directions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"diffschool_3": {
+					"type": "listbox",
+					"top": 612,
+					"left": 175,
+					"width": 210,
+					"height": 79,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.schools1",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column33",
+							"dataSource": "This:C1470.name",
+							"width": 195,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header33",
+								"text": ":xliff:HDI2_HeaderSchoolFirst",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer33",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"diffschool_4": {
+					"type": "listbox",
+					"top": 612,
+					"left": 385,
+					"width": 225,
+					"height": 79,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.schools2",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"columns": [
+						{
+							"name": "Column38",
+							"dataSource": "This:C1470.name",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header38",
+								"text": ":xliff:HDI2_HeaderSchoolSecond",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer38",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"diffschool_directions1": {
+					"type": "input",
+					"top": 612,
+					"left": 620,
+					"width": 302,
+					"height": 49,
+					"visibility": "hidden",
+					"dataSource": "_Directions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editButtonLabel4": {
+					"type": "text",
+					"top": 397,
+					"left": 60,
+					"width": 300,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SelectTwoStudents"
+				},
+				"Oval12": {
+					"type": "oval",
+					"top": 391,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 396,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"processUpdatePupilDirection10": {
+					"type": "input",
+					"top": 435,
+					"left": 60,
+					"width": 300,
+					"height": 17,
+					"dataSource": "_Directions{21}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"top": 671,
+					"left": 893,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"saveAutoMergeButton": {
+					"type": "button",
+					"top": 400,
+					"left": 450,
+					"width": 80,
+					"text": ":xliff:HDI2_Save",
+					"focusable": false,
+					"method": "ObjectMethods/saveAutoMergeButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Oval6": {
+					"type": "oval",
+					"top": 395,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 400,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"diff_listBox_conflict1": {
+					"type": "listbox",
+					"top": 454,
+					"left": 90,
+					"width": 755,
+					"height": 141,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.diffsMerge",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column34",
+							"dataSource": "This:C1470.attributeName",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header34",
+								"text": ":xliff:HDI2_HeaderEntityFields",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer34",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column35",
+							"dataSource": "This:C1470.value",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header35",
+								"text": ":xliff:HDI2_HeaderMyValue",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer35",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column36",
+							"dataSource": "This:C1470.otherValue",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header36",
+								"text": ":xliff:HDI2_HeaderNewValueInDB",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer36",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column37",
+							"dataSource": "This:C1470.action",
+							"dataSourceTypeHint": "boolean",
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header37",
+								"text": ":xliff:HDI2_HeaderUpdateWithMine",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer37",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"saveButton": {
+					"type": "button",
+					"top": 620,
+					"left": 280,
+					"width": 80,
+					"text": ":xliff:HDI2_Apply",
+					"focusable": false,
+					"method": "ObjectMethods/saveButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"save_OK_message": {
+					"type": "text",
+					"top": 620,
+					"left": 380,
+					"width": 318,
+					"height": 17,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_UpdatesApplied",
+					"class": "msg-success"
+				},
+				"information5": {
+					"type": "input",
+					"top": 60,
+					"left": 40,
+					"width": 900,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_message1": {
+					"type": "text",
+					"top": 400,
+					"left": 535,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SaveFailed",
+					"class": "msg-error"
+				},
+				"save_KO_reason1": {
+					"type": "text",
+					"top": 400,
+					"left": 685,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_StatusText"
+				},
+				"save_KO_text1": {
+					"type": "input",
+					"top": 400,
+					"left": 775,
+					"width": 200,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Form:C1466.saveStatus.statusText",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"diff_label1": {
+					"type": "text",
+					"top": 434,
+					"left": 90,
+					"width": 290,
+					"height": 17,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_SelectFieldsToUpdate",
+					"class": "msg-hint"
+				},
+				"reload_OK_message": {
+					"type": "text",
+					"top": 620,
+					"left": 380,
+					"width": 318,
+					"height": 17,
+					"visibility": "hidden",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_UpdatesNotApplied",
+					"class": "msg-success"
+				},
+				"processUpdatePupilDirection11": {
+					"type": "input",
+					"top": 400,
+					"left": 60,
+					"width": 350,
+					"height": 17,
+					"dataSource": "_Directions{13}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"processUpdatePupilDirection12": {
+					"type": "input",
+					"top": 620,
+					"left": 70,
+					"width": 180,
+					"height": 17,
+					"dataSource": "_Directions{22}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Oval11": {
+					"type": "oval",
+					"top": 614,
+					"left": 30,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 619,
+					"left": 30,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 309,
+					"left": 170,
+					"width": 160,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Rank"
+				},
+				"studentToEditRank": {
+					"type": "input",
+					"top": 309,
+					"left": 340,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.rank",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 665,
+					"left": 885,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 280,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_FirstName"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 309,
+					"left": 20,
+					"width": 100,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LastName"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 280,
+					"left": 170,
+					"width": 160,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_Email"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 280,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.firstName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"studentToEditLastName2": {
+					"type": "input",
+					"top": 309,
+					"left": 130,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.lastName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 280,
+					"left": 340,
+					"width": 230,
+					"height": 20,
+					"dataSource": "Form:C1466.editedStudent.email",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"listBoxSchoolsForMerge": {
+					"type": "listbox",
+					"top": 280,
+					"left": 620,
+					"width": 295,
+					"height": 100,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "20px",
+					"dataSource": "Form:C1466.schoolsList",
+					"currentItemSource": "Form:C1466.selectedSchool",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSchoolsForMerge.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.name",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": ":xliff:HDI2_HeaderSchoolsName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.getKey(dk key as string:K85:16)",
+							"width": 109,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": ":xliff:HDI2_HeaderPrimaryKey",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
+						}
+					],
+					"fill": "automatic",
+					"stroke": "automatic",
+					"alternateFill": "automaticAlternate"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 246,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EditStudentExample"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group17": [
+				"Oval18",
+				"Text40"
+			],
+			"Groupe33": [
+				"Oval25",
+				"Text42"
+			],
+			"Group12": [
+				"Oval14",
+				"Text37"
+			],
+			"Groupe1": [
+				"Oval1",
+				"Text3"
+			],
+			"Group1": [
+				"Oval2",
+				"Text4"
+			],
+			"Group2": [
+				"Oval3",
+				"Text9"
+			],
+			"Group4": [
+				"Oval16",
+				"Text36"
+			],
+			"Group21": [
+				"Oval22",
+				"Text49"
+			],
+			"Group22": [
+				"Oval23",
+				"Text50"
+			],
+			"Group23": [
+				"Oval24",
+				"Text51"
+			],
+			"Group3": [
+				"Oval4",
+				"Text5"
+			],
+			"Group13": [
+				"Oval9",
+				"Text12"
+			],
+			"Group14": [
+				"Oval12",
+				"Text26"
+			],
+			"Group9": [
+				"Oval6",
+				"Text1"
+			],
+			"Group10": [
+				"Oval11",
+				"Text2"
+			]
+		}
+	}
+}

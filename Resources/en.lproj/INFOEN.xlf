@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/TableForms/1" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="INFO_TableLabel" resname="INFO_TableLabel">
+				<source>INFO</source>
+				<target>INFO</target>
+			</trans-unit>
+			<trans-unit id="INFO_IDLabel" resname="INFO_IDLabel">
+				<source>ID : </source>
+				<target>ID : </target>
+			</trans-unit>
+			<trans-unit id="INFO_Page" resname="INFO_Page">
+				<source>Page:</source>
+				<target>Page:</target>
+			</trans-unit>
+			<trans-unit id="INFO_Title" resname="INFO_Title">
+				<source>Title</source>
+				<target>Title</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
